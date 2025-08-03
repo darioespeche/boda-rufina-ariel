@@ -23,7 +23,7 @@ function App() {
 
       <section className="cuenta-regresiva">
         <h2>Faltan...</h2>
-        <Countdown targetDate="2026-04-12T18:00:00" />
+        <Countdown targetDate="2026-06-15T18:00:00" />
       </section>
       <section className="bienvenida">
         <h2>¡Querida familia y amigos!</h2>
@@ -45,7 +45,7 @@ function App() {
           <span className="badge-icon">
             <FaCalendarAlt />
           </span>
-          Fecha: 12 de abril de 2026
+          Fecha: 15 de junio de 2026
         </h3>
         <h3>
           <span className="badge-icon">
@@ -71,7 +71,7 @@ function App() {
 
       <section className="formulario">
         <h2>¿Nos acompañás?</h2>
-        <p>Confirmá tu asistencia antes del 1º de abril</p>
+        <p>Confirmá tu asistencia antes del 1º de junio</p>
 
         <form
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5ndg2m-H7492q1fh-VaeTTpxGw5-uSxUWKDokxmpFE6E9QQ/formResponse"
@@ -135,8 +135,10 @@ function App() {
       </section>
 
       <footer className="footer">
-        <p>"El amor todo lo puede, todo lo espera..."</p>
-        <h3>Con amor, María & Juan</h3>
+        <p>
+          Gracias por acompañarnos en este día tan especial. ¡Nos vemos pronto!
+        </p>
+        <h3>Con amor, Rufina & Ariel</h3>
       </footer>
     </div>
   );
