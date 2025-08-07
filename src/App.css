@@ -151,6 +151,7 @@ h2 {
 .formulario input,
 .formulario textarea {
   font-family: var(--letraSubtitulo);
+  background-color: #dedfc5;
   width: 90%;
   max-width: 500px;
   padding: 12px;
@@ -162,7 +163,6 @@ h2 {
 }
 
 .formulario textarea {
-  resize: vertical;
   height: 80px;
 }
 

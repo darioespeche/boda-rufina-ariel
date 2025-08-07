@@ -9,10 +9,8 @@
 }
 
 .timeline-section {
-  background-color: var(--background-section);
+  background-color: var(--background-colors);
   padding: 40px 20px;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 80px;
   margin-bottom: 40px;
 }
@@ -35,11 +33,34 @@
   align-items: center;
   gap: 18px;
 }
+.timeline-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-arrow {
+  font-size: 1.5rem;
+  color: var(--letra-color);
+  margin: 5px 0;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
 
 .timeline-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
+  position: relative;
   max-width: 600px;
   width: 100%;
   padding: 10px 20px;
@@ -48,19 +69,22 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
 .timeline-time {
   font-weight: bold;
   color: var(--letra-color);
-  min-width: 80px;
   font-size: 1rem;
 }
 
 .timeline-icon {
-  color: var(--letra-color);
   font-size: 1.2rem;
-  width: 24px;
-  display: flex;
-  justify-content: center;
+  color: var(--letra-color);
 }
 
 .timeline-text {
@@ -71,7 +95,24 @@
 }
 
 /* Responsivo */
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
+  .timeline-section {
+    font-size: 2rem;
+  }
+  .timeline-item {
+    flex-direction: row;
+  }
+
+  .timeline-line {
+    width: 20px;
+  }
+
+  .timeline-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .timeline-item {
     flex-direction: column;
     align-items: center;

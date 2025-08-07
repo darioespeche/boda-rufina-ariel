@@ -48,7 +48,6 @@ function App() {
         </p>
       </section>
       <section className="galeria">
-        <h2>Algunas fotos</h2>
         <Carrusel />
       </section>
       <Timeline />

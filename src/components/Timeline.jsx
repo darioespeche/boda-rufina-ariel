@@ -42,15 +42,20 @@ function Timeline() {
   return (
     <section className="timeline-section">
       <h2>Programa del Evento</h2>
-      <ul className="timeline-list">
-        {eventos.map((e, index) => (
-          <li key={index} className="timeline-item">
-            <span className="timeline-time">{e.hora}</span>
-            <span className="timeline-icon">{e.icono}</span>
+      {eventos.map((e, index) => (
+        <div key={index} className="timeline-wrapper">
+          <li className="timeline-item">
+            <div className="timeline-header">
+              <span className="timeline-time">{e.hora}</span>
+              <span className="timeline-icon">{e.icono}</span>
+            </div>
             <span className="timeline-text">{e.texto}</span>
           </li>
-        ))}
-      </ul>
+          {index !== eventos.length - 1 && (
+            <div className="timeline-arrow">↓</div>
+          )}
+        </div>
+      ))}
     </section>
   );
 }
