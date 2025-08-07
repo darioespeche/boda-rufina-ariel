@@ -15,15 +15,14 @@ function App() {
       </section>
 
       <section className="presentacion-boda">
-        <h1>¡Sí, para siempre!</h1>
-        <h2>Rufina & Ariel</h2>
-        <p className="fecha-boda">15 de junio de 2026</p>
+        <h1>Rufina & Ariel</h1>
         <h2>¡Nos casamos!</h2>
       </section>
 
       <section className="cuenta-regresiva">
         <h2>Faltan...</h2>
         <Countdown targetDate="2026-06-15T18:00:00" />
+        <p className="fecha-boda">15 de junio de 2026</p>
       </section>
       <section className="bienvenida">
         <h2>¡Querida familia y amigos!</h2>
@@ -98,7 +97,7 @@ function App() {
           <input
             type="text"
             name="entry.2606285"
-            placeholder="Un mensaje para los novios ❤️"
+            placeholder="Un mensaje para los novios "
           />
           <br />
           <button type="submit" className="boton-confirmar">
@@ -108,7 +107,7 @@ function App() {
       </section>
 
       <section className="formulario">
-        <h2>🎶 ¡Ayudanos a elegir la música!</h2>
+        <h2>¡Ayudanos a elegir la música!</h2>
         <p>¿Qué canciones no pueden faltar en la fiesta?</p>
 
         <form
@@ -138,7 +137,7 @@ function App() {
         <p>
           Gracias por acompañarnos en este día tan especial. ¡Nos vemos pronto!
         </p>
-        <h3>Con amor, Rufina & Ariel</h3>
+        <h3>Con amor, Rufina y Ariel</h3>
       </footer>
     </div>
   );

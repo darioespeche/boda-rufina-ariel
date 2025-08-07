@@ -1,9 +1,11 @@
 :root {
-  --letra-color: #7c6e68;
-  --secondary-color: #ffffff;
+  --letra-color: #4e3150;
+  --secondary-color: #b6dec1;
   --accent-color: #ffe6db;
-  --background-color: #fae7df;
+  --background-color: #fbf6b5;
   --background-section: #ddcbc3;
+  --letratitulo: "Great Vibes", cursive;
+  --letraSubtitulo: "Montserrat", sans-serif;
 }
 .sonido {
   position: fixed;

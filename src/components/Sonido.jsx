@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { GiMusicalNotes } from "react-icons/gi"; // 👈 nuevo ícono musical
+import { CiMusicNote1 } from "react-icons/ci";
 import "./Sonido.css";
 
 function Sonido() {
@@ -46,7 +46,7 @@ function Sonido() {
         className="boton-sonido"
         aria-label="Reproducir música"
       >
-        <GiMusicalNotes size={22} />
+        <CiMusicNote1 size={22} />
       </button>
     </div>
   );

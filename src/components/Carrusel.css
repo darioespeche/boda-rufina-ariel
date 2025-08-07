@@ -1,3 +1,13 @@
+:root {
+  --letra-color: #4e3150;
+  --secondary-color: #b6dec1;
+  --accent-color: #ffe6db;
+  --background-color: #fbf6b5;
+  --background-section: #ddcbc3;
+  --letratitulo: "Great Vibes", cursive;
+  --letraSubtitulo: "Montserrat", sans-serif;
+}
+
 .carrusel {
   display: flex;
   flex-direction: column;
@@ -12,50 +22,12 @@
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-}
-
-.carrusel-controles {
-  margin-top: 15px;
-}
-
-.carrusel-controles button {
-  background-color: #3d423c; /* color5 */
-  border: none;
-  color: #f5f7bd; /* color4 */
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  margin: 0 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.carrusel-controles button:hover {
-  background-color: #c8c9b5; /* color2 */
-  color: #3d423c; /* texto contrastante */
-  font-weight: bold;
+  transition: transform 0.6s ease-in-out;
 }
 
 @media (max-width: 768px) {
   .carrusel-img {
     width: 100%;
     height: auto;
-  }
-
-  .carrusel-controles {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 10px;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .carrusel-controles button {
-    width: 40%;
-    max-width: 140px;
-    font-size: 1rem;
-    padding: 10px;
   }
 }

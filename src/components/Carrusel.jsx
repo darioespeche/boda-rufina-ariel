@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Carrusel.css";
 
 const imagenes = [
@@ -12,13 +12,13 @@ const imagenes = [
 function Carrusel() {
   const [index, setIndex] = useState(0);
 
-  const anterior = () => {
-    setIndex((prev) => (prev === 0 ? imagenes.length - 1 : prev - 1));
-  };
+  useEffect(() => {
+    const intervalo = setInterval(() => {
+      setIndex((prev) => (prev === imagenes.length - 1 ? 0 : prev + 1));
+    }, 3500);
 
-  const siguiente = () => {
-    setIndex((prev) => (prev === imagenes.length - 1 ? 0 : prev + 1));
-  };
+    return () => clearInterval(intervalo);
+  }, []);
 
   return (
     <div className="carrusel">
@@ -27,10 +27,6 @@ function Carrusel() {
         alt={`Foto ${index + 1}`}
         className="carrusel-img"
       />
-      <div className="carrusel-controles">
-        <button onClick={anterior}>◀</button>
-        <button onClick={siguiente}>▶</button>
-      </div>
     </div>
   );
 }
