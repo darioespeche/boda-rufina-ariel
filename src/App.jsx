@@ -1,4 +1,6 @@
 import "./App.css";
+import { useState, useEffect } from "react";
+import Loader from "./components/Loader";
 import Countdown from "./components/Countdown";
 import Carrusel from "./components/Carrusel";
 import Sonido from "./components/Sonido";
@@ -6,6 +8,19 @@ import Timeline from "./components/Timeline";
 import { FaCalendarAlt, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <div className="boda-container">
       <Sonido />
